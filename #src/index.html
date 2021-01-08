@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Denis Kachurovskyi - Personal Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="main_body">
+
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="wrapper">
+
+    <!-- Scroll top -->
+    <a href="#poster" class="scroll-top" hidden>
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header__row">
+        <div class="header__logo">
+          <a href="#poster">Kachurovskyi.<span>D</span></a>
+        </div>
+        <div class="header__burger">
+          <input type="checkbox" id="check-menu">
+          <label for="check-menu" id="check-label"></label>
+          <div class="burger__line first"></div>
+          <div class="burger__line second"></div>
+          <div class="burger__line third"></div>
+          <div class="burger__line fourth"></div>
+        </div>
+        <nav class="header__menu main-menu">
+          <div class="menu__wrap">
+            <a href="#poster" class="menu__link">Home</a>
+            <a href="#about" class="menu__link">About me & Skills</a>
+            <a href="#gallery" class="menu__link">Recent Portfolio</a>
+            <a href="#contacts" class="menu__link">Contacts</a>
+            <div class="menu__social-group">
+              <a href="#" class="fab fa-github"></a>
+              <a href="#" class="fab fa-telegram-plane"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-linkedin-in"></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Poster -->
+    <section id="poster" class="poster">
+      <div class="poster__content">
+        <div class="poster__figure">
+          <div class="poster__img">
+            <span class="poster__name">Denis Kachurovskyi</span>
+          </div>
+          <div class="poster__box"></div>
+        </div>
+        <div class="poster__text">
+          <div class="poster__title">
+            Welcome to my webpage!
+          </div>
+          <div class="poster__subtitle">
+            I'm Front-end
+            Developer
+          </div>
+          <div class="poster__skills">
+            Web Developer & Photographer
+          </div>
+          <div class="poster__buttons">
+            <a href="#" class="poster__button" download>Download my CV</a>
+            <a href="#" class="poster__button" target="_blank">View my CV</a>
+          </div>
+          <div class="poster__social-group">
+            <a href="#" class="fab fa-github"></a>
+            <a href="#" class="fab fa-telegram-plane"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin-in"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Main script -->
+  <script src="js/script.js"></script>
+  <!-- Mouse move listener-->
+  <script>
+    const position = document.documentElement;
+    position.addEventListener('mousemove', e => {
+      position.style.setProperty('--x', e.clientX + 'px');
+      position.style.setProperty('--y', e.clientY + 'px');
+    })
+  </script>
+</body>
+
+</html>
