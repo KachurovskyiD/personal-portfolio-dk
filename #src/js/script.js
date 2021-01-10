@@ -8,7 +8,9 @@ window.addEventListener('DOMContentLoaded', () => {
   @@include('smoothScroll.js')
   @@include('header-burger.js')
   @@include('header-sticky.js')
-  @@include('wow.js')
+  @@include('progress-bar.js')
+  @@include('counter.js')
+  @@include('mouse-move.js')
 });
 
 

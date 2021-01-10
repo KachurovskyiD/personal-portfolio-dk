@@ -2,7 +2,7 @@
   font-family: @fontFamily;
   font-weight: 400;
   font-size: 16px;
-  color: #333333;
+  color: #666666;
 }
 
 .wrapper {
@@ -18,40 +18,66 @@
 }
 
 .container {
-  padding: 130px 15px 0;
+  padding: 7vw 15px 5vw;
   max-width: 1170px;
   margin: 0px auto;
 }
 
-// .title {
-//   font-weight: 500;
-//   color: @orangeColor;
-//   font-size: 16px;
-//   text-transform: uppercase;
-//   letter-spacing: 5px;
-//   line-height: 24px;
-//   margin-bottom: 15px;
-// }
+.title {
+  font-family: @fontArimo;
+  font-weight: 500;
+  font-size: 48px;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  line-height: 1.1;
+  white-space: nowrap;
+}
 
-// .subtitle {
-//   font-weight: 700;
-//   color: #151517;
-//   line-height: 1.1;
-//   font-size: 48px;
-//   margin-bottom: 30px;
-// }
+.subtitle {
+  font-family: @fontKaushan;
+  font-size: 54px;
+  color: @goldColor;
+  line-height: 1.1;
+  padding-top: 15px;
+  margin-bottom: 30px;
+}
 
-// .description {
-//   font-family: @fontRoboto;
-//   font-weight: 400;
-//   color: #878c8d;
-//   font-size: 16px;
-//   line-height: 28px;
-//   margin-top: 10px;
-// }
+@media (max-width: 1200px) {
+  .title {
+    font-size: 36px;
+    letter-spacing: 7px;
+  }
 
-@media (max-width: 1200px) {}
+  .subtitle {
+    font-size: 48px;
+  }
+}
 
 @media (max-width: 991px) {}
 
-@media (max-width: 575px) {}
+@media (max-width: 768px) {
+  .container {
+    padding: 10vw 15px 2vw;
+  }
+
+  .title {
+    font-size: 28px;
+    letter-spacing: 5px;
+  }
+
+  .subtitle {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 575px) {
+  .title {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .subtitle {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,116 @@
+.contacts {
+  position: relative;
+  background-image: url('../img/dark-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+  }
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__title {
+    color: #ffffff;
+  }
+
+  &__row {
+    padding: 30px 0 10px;
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      text-align: center;
+      display: inline-block;
+      font-size: 4rem;
+      height: 100px;
+      width: 100px;
+      line-height: 100px;
+      color: @goldColor;
+      transition: all .5s ease;
+      transform-origin: left;
+      transform: rotateY(-30deg);
+      text-shadow: 10px 0px 1px #f0efef,
+        10px 0px 1px #e6e6e6,
+        10px 0px 1px rgb(255, 255, 255),
+        10px 0px 1px rgb(255, 255, 255);
+    }
+
+    &:hover i {
+      color: #dfdfdf;
+      transform: rotate(0deg);
+      text-shadow: 0px 0px 1px #131313, 0px 0px 1px #070707, 0px 0px 1px black, 0px 0px 1px black;
+    }
+
+    &:hover a {
+      color: @goldColor;
+    }
+  }
+
+  &__link {
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+  &__footer {
+    color: #ffffff;
+    padding-top: 70px;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+
+    a {
+      color: @goldColor;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+
+    &__row {
+      padding: 10px 0;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    &__item {
+      margin-bottom: 25px;
+    }
+
+    &__link {
+      padding-top: 0;
+      font-size: 16px;
+    }
+
+    &__footer {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+}
